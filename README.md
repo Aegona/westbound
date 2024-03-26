@@ -1,3 +1,10 @@
+local args = {
+    [1] = "PayOffBounty"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("GeneralEvents"):WaitForChild("BuyItem"):InvokeServer(unpack(args))
+
+
 
 local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
 local window = DrRayLibrary:Load("???? Hub - Westbound - { BETA }", "Default")
